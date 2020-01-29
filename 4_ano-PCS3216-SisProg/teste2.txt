@@ -1,0 +1,16 @@
+	@    4000
+	ADDI R1,R1,5
+	ADDI R2,R2,3
+	ADDI R3,R3,3	
+	BEQ  loop1,R2,R2
+	BNE  loop2,R2,R3
+
+loop1	OR   R1,R1,R2
+	J    fim
+loop2	AND  R1,R1,R2
+	J    fim
+fim	ADDI R4,R4,2000
+	SW   R4,R1
+	#
+
+
